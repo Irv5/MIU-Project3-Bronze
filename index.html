@@ -1,0 +1,166 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Music Catalog</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	
+	<!-- home page -->
+	<div data-role="page" id="homePage">
+	
+		
+	<div data-role="header" data-position="fixed">
+		<h1>Music Catalog</h1>
+	</div>
+	
+			
+	<div>
+		<a href="additem.html" data-ajax="false"><img src="images/cta.png" id="cta" /></a> 
+	</div>
+	   
+    
+    <!-- search field -->
+			<div data-role="fieldcontain">
+				<label for="songsearch"><p>Search Music:</p></label>
+				<input type="search" name="songsearch" id="songsearch" />
+			</div>
+
+	<div data-role="content">
+	
+		<!-- Browse and Title Information -->
+
+		<ul data-role="listview" data-inset="true" data-theme="b">
+		<li data-role="list-divider">Browse </li>
+				
+			<li><p><a href="#funPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Fun Music</a></p></li>
+			<li><p><a href="#otherPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Other Music</a></p></li>
+			<li><p><a href="#partyPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Party Music</a></p></li>
+			<li><p><a href="#relaxedPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Relaxed Music</a></p></li>
+			<li><p><a href="#favoritesPage" data-role="button" data-icon="arrow-r" data-iconpos="right">favorite Music</a></p></li>
+		</ul>
+	</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="https://github.com/Irv5/MIU-Project2">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://irv5.github.com/MIU-Project2">GitHub Site</a></h4>
+		</div>
+
+	</div>
+	
+
+		<!-- Fun Music Information -->
+		<div data-role="page" id="funPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Fun Music</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Find the Fun Music Here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Footer</h4>
+			</div>
+
+		</div>
+		
+		
+		<!-- Other Music Information -->
+		<div data-role="page" id="otherPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Other Music</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Find Other Music Here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Footer</h4>
+			</div>
+			
+		</div>
+
+		<!-- Party Music Information -->
+		<div data-role="page" id="partyPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Party Music</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Find the Party Music Here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Footer</h4>
+			</div>
+			
+		</div>
+
+	
+
+	<!-- Relaxed Music Information -->
+	<div data-role="page" id="relaxedPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Relaxed Music</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Find Relaxed Music Here</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+	</div>
+
+		
+	<!-- Favorite Music Information -->
+	<div data-role="page" id="favoritesPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Favorite Music</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Find Your Favorite Music Here</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+	</div>
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
