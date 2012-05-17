@@ -1,0 +1,419 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Music Catalog</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<!--script src="js/libs/modernizr.custom.min.js"></script -->
+
+</head>
+<body>
+	
+	<!-- home page -->
+	<div data-role="page" id="homePage">
+	
+		
+	<div data-role="header" data-position="fixed">
+		<h1>Music Catalog</h1>
+	</div>
+	
+			
+	<div>
+		<a href="additem.html" data-ajax="false"><img src="images/cta.png" id="cta" /></a> 
+	</div>
+	   
+			
+	<div data-role="content">
+	
+		<!-- search field -->
+		<!-- Browse and Title Information -->
+
+		<ul data-role="listview" data-filter="true" data-inset="true" data-theme="b">
+		<li data-role="list-divider">Browse </li>
+		
+			<li><p><a href="#funPage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">Fun Music</a></p></li>
+			<li><p><a href="#otherPage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">Other Music</a></p></li>
+			<li><p><a href="#newsPage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">News</a></p></li>
+			<li><p><a href="#relaxedPage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">Relaxed Music</a></p></li>
+			<li><p><a href="#favoritesPage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">Favorite Music</a></p></li>
+			<li><p><a href="#worldWidePage" data-role="button" data-icon="arrow-r" data-theme="b" data-iconpos="right">Old School Music</a></p></li>
+		</ul>
+	</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4><a href="https://github.com/Irv5/MIU-Project3-Bronze.git">GitHub Repo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://irv5.github.com/MIU-Project3-Bronze/index.html">GitHub Site</a></h4>
+		</div>
+
+	</div>
+	
+
+		<!-- Fun Music Information -->
+		<div data-role="page" id="funPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Fun Music</h1>
+			</div><br />
+
+			<div data-role="content">
+				
+				<form action="" method="post" id="funmusicform">
+				
+					<div data-role="fieldcontain">
+						<label for="funrandb">Fun R & B:</label>
+						<input type="test" name="funrandb" id="funrandb" class="required" />	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="date">Date:</label>
+						<input type="text" name="date" value="" class="required"/>
+						<label>**12/12/12**</label>
+					</dev>		
+					
+					
+					<div data-role="fieldcontain">
+						<label for="funjazz">Web Site:</label>
+						<input type="test" name="funjazz" id="funjazz" class="url" value="" class="required" placeholder="http://www.fullsail.com"  />	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="funmusicsearch">Search:</label>
+						<input type="search" name="funmusicsearch" id="funmusicsearch"  />	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="funmusicfeedback">Feedback:</label>
+						<textarea name="funmusicfeedback" id="funmusicfeedback" class="required"></textarea>	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="funmusicrange">Music Range:</label>
+						<input type="range" name="funmusicrange" id="funmusicrange" value="5" min="0" max="10" />	
+					</div>
+					
+					<div data-role="fieldcontain">
+						<label for="funmusicilike">Good Music:</label>
+						<select data-role="slider">
+							<option value="off">Yes</option>
+							<option value="on">No</option>
+						</select><br />	
+						<label>**Select Yes or No**</label>
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Party Music:</legend>
+							<input type="radio" value="Jam-On-It" name="Party-song" id="Party-song-1" class="required" />
+							<label for="Party-song-1">Jam-On-It</label>
+							<input type="radio" value="Good Times" name="Party-song" id="Party-song-2" />
+							<label for="Party-song-2">Good Times</label>
+							<input type="radio" value="Give It Up" name="Party-song" id="Party-song-3" />
+							<label for="Party-song-3">Give It Up</label>
+						</fieldset>
+					
+					</div>
+					
+					<div data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Other Music:</legend>
+							<input type="checkbox" value="Flashlight" name="Other-song" id="Other-song-1" class="required" />
+							<label for="Other-song-1">Flashlight</label>
+							<input type="checkbox" value="Wild Thing" name="Other-song" id="Other-song-2" />
+							<label for="Other-song-2">Wild Thing</label>
+							<input type="checkbox" value="Tonight" name="Other-song" id="Other-song-3" />
+							<label for="Other-song-3">Tonight</label>
+						</fieldset>
+					
+					</div>
+					
+					<div data-role="fieldcontain">
+						<lable for="music-type">Music</lable>
+						<select name="music-type" id="music-type" data-native-menu="false" class="required">
+							<option data-placeholder="true">Please Select One</option>
+							<optgroup label="Chill Out Music">
+								<option value="Jazz">Jazz Music!</option>
+								<option value="Relaxed">Relaxed Music!</option>
+								<option value="Other">Other Music!</option>
+							</optgroup>
+							<optgroup label="Party Music">
+								<option value="Jazz">Up-Beat Music!</option>
+								<option value="Relaxed">House Music!</option>
+								<option value="Other">R&B Music!</option>
+							</optgroup>
+						</select>
+					</div>	
+										
+					
+					<div data-role="fieldcontain">
+						<input type="submit" value="Log the Music" data-theme="b" />
+						<input type="reset" value="Reset" data-theme="a" />		
+					</div>
+					
+					
+				</form>
+				
+				
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="music">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#newsPage" data-icon="star">News</a></li>
+						<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
+						<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
+						<li><a href="http://irv5.github.com/MIU-Project3-Gold/index.html" data-icon="search">GitHub Site</a></li>
+						<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site Bronze</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		
+		
+		<!-- Other Music Information -->
+		<div data-role="page" id="otherPage" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<h1>Other Music</h1>
+			</div>
+
+			<div data-role="content">
+				<p>Find Other Music Here</p>
+			</div>
+
+			<div data-role="footer" data-position="fixed">
+				<h4>Footer</h4>
+			</div>
+			
+		</div>
+
+		<!-- News Information -->
+		<div data-role="page" id="newsPage" data-add-back-btn="true">
+			
+			<li data-role="list-divider"></li>
+			<ul data-role="listview" data-filter="true" data-inset="true" data-theme="b">
+			
+
+			<div data-role="header" data-position="fixed">
+				<h1>News</h1>
+			</div
+
+			<div data-role="content">
+				<div>
+					<ul>
+					<li><h5><a>Three Chinese banks expanding in U.S.</a></h5></li>
+					<ul><h6>CNN, Date 04/9/12, Added 2:10 PM<h6></ul>
+					</ul>
+				</div>
+				 
+				<div>
+					<ul>
+					<li><h5><a>Obama supports same-sex marriage</a></h5></li>
+					<ul><h6>CNN, Date 04/9/12, Added 1:15 PM<h6></ul>
+					</ul>
+				</div>
+
+				<div>
+					<ul>
+					<li><h5><a>Murder, Kidnapping charges against Adam Mayes</a></h5></li>
+					<ul><h6>CNN, Date 04/9/12, Added 12:05 PM<h6></ul>
+					</ul>
+				</div>
+				
+				<div>
+					<ul>
+					<li><h5><a>'Pocket calls' burden 911 responders in NYC</a></h5></li>
+					<ul><h6>CNN, Date 04/9/12, Added 11:35 AM<h6></ul>
+					</ul>
+				</div>
+				
+				<div>
+					<ul>
+					<li><h5><a>A bit of good news for U.S. mothers</a></h5></li>
+					<ul><h6>CNN, Date 04/9/12, Added 09:45 AM<h6></ul>
+					</ul>
+				</div>
+				
+				
+			
+			
+			
+
+			<div data-role="footer" data-position="fixed" data-id="music">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#newsPage" data-icon="star">News</a></li>
+						<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
+						<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
+						<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		</div>
+	
+
+	<!-- Relaxed Music Information -->
+	<div data-role="page" id="relaxedPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Favorite Music</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Find Your Relaxed Music Here</p>
+		
+		<div data-role="collapsible-set">
+			
+			<div data-role="collapsible" data-collapsed="false" data-theme="b">
+				<h3>Cinderfella</h3>
+				<p>Artist: Dana Dane</p>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				<h3>Word Up</h3>
+				<p>Artist: Cameo</p>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				<h3>Good Times</h3>
+				<p>Artist: Funk Band</p>
+			</div>
+			
+		</div>
+			
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-id="music">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsPage" data-icon="star">Fun Music</a></li>
+					<li><a href="#favoritesPage" data-icon="gear">Favorites Music</a></li>
+					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
+					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+	
+
+	<!-- Favorite Music Information Accordion Style-->
+	<div data-role="page" id="favoritesPage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>Favorite Music</h1>
+		</div>
+
+		<div data-role="content">
+			<p>Find Your Favorite Music Here</p>
+		
+		<div data-role="collapsible-set">
+			
+			<div data-role="collapsible" data-collapsed="false" data-theme="b">
+				<h3>Cinderfella</h3>
+				<p>Artist: Dana Dane</p>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				<h3>Word Up</h3>
+				<p>Artist: Cameo</p>
+			</div>
+			
+			<div data-role="collapsible" data-collapsed="true" data-theme="b">
+				<h3>Good Times</h3>
+				<p>Artist: Funk Band</p>
+			</div>
+			
+		</div>
+			
+		</div>
+
+		<div data-role="footer" data-position="fixed" data-id="music">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsPage" data-icon="star">News</a></li>
+					<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
+					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
+					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Old School Music Information Grids Layout-->
+	<div data-role="page" id="worldWidePage" data-add-back-btn="true">
+
+		<div data-role="header" data-position="fixed">
+			<h1>World Wide Music</h1>
+		</div>
+
+		<div data-role="content">
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Music from Around the World-West</li>
+						<li>1970 Music</li>
+						<li>1980 Music</li>
+						<li>1990 Music</li>
+					</ul>
+				</div>
+				<div class="ui-block-b">
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider">Music from Around the World-East</li>
+						<li>1970 Music</li>
+						<li>1980 Music</li>
+						<li>1990 Music</li>
+					</ul>
+			</div>
+		</div>	
+		</div>
+		
+		
+		<div data-role="footer" data-position="fixed" data-id="music">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#newsPage" data-icon="star">News</a></li>
+					<li><a href="#favoritesPage" data-icon="gear" class="ui-btn-active">Favorites Music</a></li>
+					<li><a href="#relaxedPage" data-icon="search">Relaxed Music</a></li>
+					<li><a href="http://irv5.github.com/MIU-Project3-Bronze/index.html" data-icon="search">GitHub Site</a></li>ß
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/json.js"></script>
+
+</body>
+</html>
+
+    
